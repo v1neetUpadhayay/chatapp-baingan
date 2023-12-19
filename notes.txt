@@ -1,2 +1,16 @@
-# github 
+# github
+# start git
+git init
+
+git status
+git remote add origin git@github.com:v1neetUpadhayay/chatapp-baingan.git
+# to check which repo/server are we connected to
+git remote -v
+
+# in main direntory and adds everything
+git branch
+git check
+git add .
+git commit -m "message"
+git push origin
 
