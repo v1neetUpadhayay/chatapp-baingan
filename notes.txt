@@ -14,3 +14,14 @@ git add .
 git commit -m "message"
 git push origin
 
+git pull origin master
+
+
+
+.\venv\Scripts\activate
+source C:\Users\Raman\OneDrive\Desktop\Code\chatapp-baingan\venv\Scripts\activate
+python -m venv venv
+python -m venv chatapp 
+ python -m  django-admin startproject my_app
+  py -m pip install Django
+  
