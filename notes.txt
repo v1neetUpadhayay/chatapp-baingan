@@ -17,11 +17,28 @@ git push origin
 git pull origin master
 
 
+## activate env
+.\venv_name\Scripts\activate
 
-.\venv\Scripts\activate
-source C:\Users\Raman\OneDrive\Desktop\Code\chatapp-baingan\venv\Scripts\activate
-python -m venv venv
-python -m venv chatapp 
- python -m  django-admin startproject my_app
-  py -m pip install Django
+## start django app
+python manage.py runserver
+
+
+# creating a new env
+python -m venv baingan_env
+
+# activate env
+python -m venv baingan_env
+
+# to check what packages are already in env 
+pip freeze
+
+# setup django
+pip install django
+django-admin --version
+
+# start a new application
+django-admin startproject PROJECTNAME
+
+
   
