@@ -1,3 +1,4 @@
 baingan_env/*
 /*_pycache__/
 _pycache__/*
+*.pyc

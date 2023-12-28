@@ -1,0 +1,10 @@
+# install packages in env
+pip install -r requirements.txt
+
+# start fastapi application
+# go to folder where you have made instance of fastapi
+uvicorn app:app --reload
+
+# go to browser
+# add in url
+http://localhost:8000/docs
