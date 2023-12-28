@@ -1,6 +1,15 @@
 from typing import Union
 
 from fastapi import FastAPI
+from pydantic import BaseModel
+
+
+class Item(BaseModel):
+    firstname: str
+    lastname: str
+    price: float
+    tax: Union[float, None] = None
+
 
 app = FastAPI()
 
@@ -10,8 +19,8 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/user/register")
-def user_registration_process():
+@app.post("/user/register")
+def user_registration_process(item: Item):
     # prepare setup to take the following pramameters
     # - firstname
     # - lastname
@@ -19,10 +28,14 @@ def user_registration_process():
     # - email
     # - date of birth
 
+    first_name = item.firstname
     # verify details and write into a csv file
 
     # create a table in postgres
 
     # push the data into postgres if all is ok
-
-    return True
+    if "all good":
+        #save into postgres
+        return True
+    else:
+        return "try again"
